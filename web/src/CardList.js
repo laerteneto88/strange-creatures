@@ -17,6 +17,8 @@ class CardList extends Component {
 
   componentDidMount () {
     fetch('https://jsonplaceholder.typicode.com/users')
+    // or
+    //fetch('http://localhost:8081/criatures/read')
       .then(response => response.json())
       .then(users => this.setState({ criatures: users }))
   }
